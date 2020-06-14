@@ -7,7 +7,7 @@ Visit the link:  [https://www.linkedin.com/in/mahmoudaoman/](https://www.linkedi
 
 
 ### Social Networks
-Linkedin: [https://www.linkedin.com/in/mahmoudaoman/](https://www.linkedin.com/in/mahmoudaoman/)
+Linkedin: [landing-page](https://mahmoudahmadosman.github.io/landing-page/)
 
 
 
