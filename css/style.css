@@ -1,163 +1,166 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
-*{
-    padding: 0 px;
+* {
+  padding: 0px;
 
-    margin: 0 px;
+  margin: 0px;
 
-    box - sizing: border - box;
+  box-sizing: border-box;
 }
 
 body {
-    height: 1500 px;
+  height: auto;
 }
 
-.landing - page {
-        /* background: radial-gradient(circle, black, white); */
+.landing-page {
+  /* background: radial-gradient(circle, black, white); */
 
-        background: url(.. / images / landing_bd.jpeg);
+  background: url(../images/landing_bd.jpeg);
 
-        background - position: center center;
+  background-position: center center;
 
-        position: relative;
+  position: relative;
 
-        background - size: cover;
+  background-size: cover;
 
-        min - height: 100 vh;
-        margin - bottom: -60 px;
+  min-height: 100vh;
+  margin-bottom: -60px;
 
-        z - index: 2;
-    }
+  z-index: 2;
+}
 
-    .landing - page.mobile {
-        width: 400 px;
+.landing-page .mobile {
+  width: 400px;
 
-        background: url(.. / images / landing_bd.jpeg);
+  background: url(../images/landing_bd.jpeg);
 
-        background - position: center center;
+  background-position: center center;
 
-        position: relative;
+  position: relative;
 
-        background - size: cover;
+  background-size: cover;
 
-        background - attachment: fixed;
+  background-attachment: fixed;
 
-        min - height: 100 vh;
+  min-height: 100vh;
 
-        z - index: -1;
-    }
+  z-index: -1;
+}
 
-    .landing - page.overlay {
-        background - color: rgba(0, 0, 0, 0.41);
+.landing-page .overlay {
+  background-color: rgba(0, 0, 0, 0.41);
 
-        position: absolute;
+  position: absolute;
 
-        left: 0 px;
+  left: 0px;
 
-        top: 0 px;
+  top: 0px;
 
-        right: 0 px;
+  right: 0px;
 
-        height: 100 % ;
+  height: 100%;
 
-        z - index: 1;
-    }
+  z-index: 1;
+}
 
-    .landing - page.header {
-        display: flex;
+.landing-page .header {
+  display: flex;
 
-        position: relative;
+  position: relative;
 
-        color: #ffffff;
+  color: #ffffff;
 
-        z - index: 2;
-    }
+  z-index: 2;
+}
 
-    .header.logo {
-        background - color: rgba(6, 6, 6, 0.19);
+.header .logo {
+  background-color: rgba(6, 6, 6, 0.19);
 
-        width: 100 % ;
+  width: 100%;
 
-        color: #ffffff;
+  color: #ffffff;
 
-        font - weight: bold;
+  font-weight: bold;
 
-        font - size: 25 px;
+  font-size: 25px;
 
-        z - index: 2;
+  z-index: 2;
 
-        position: absolute;
+  position: absolute;
 
-        font - family: "Raleway", sans - serif;
-    }
+  font-family: "Raleway", sans-serif;
+}
 
-    .header.links {
-        width: 100 % ;
+.header .links {
+  width: 100%;
 
-        padding: 0 px;
+  padding: 0px;
 
-        list - style: none;
+  list-style: none;
 
-        text - align: right;
+  text-align: right;
 
-        font - size: 20 px;
+  font-size: 20px;
 
-        z - index: 2;
+  z-index: 2;
 
-        line - height: 29 px;
+  line-height: 29px;
 
-        font - family: "Raleway",
-        sans - serif;
-    }
+  font-family: "Raleway", sans-serif;
+}
 
-    .header.links li {
-        display: inline - block;
+.header .links li {
+  display: inline-block;
 
-        margin - left: 20 px;
+  margin-left: 20px;
 
-        margin - right: 50 px;
-    }
+  margin-right: 50px;
+}
 
-    .header.links li a {
-        color: #fff;
+.header .links li a {
+  color: #fff;
 
-        text - decoration: none;
-    }
+  text-decoration: none;
+}
 
-    .landing - page.landing - summary {
-        position: absolute;
+.landing-page .landing-summary {
+  position: absolute;
 
-        left: 50 % ;
+  left: 50%;
 
-        top: 50 % ;
+  top: 50%;
 
-        transform: translate(-50 % , -50 % );
+  transform: translate(-50%, -50%);
 
-        color: #fff;
+  color: #fff;
 
-        z - index: 2;
-    }
+  z-index: 2;
+}
 
-    .landing - page.landing - summary h1 {
-        font - size: 100 px;
+.landing-page .landing-summary h1 {
+  font-size: 100px;
 
-        color: #fff;
+  color: #fff;
 
-        font - weight: bold;
-    }
+  font-weight: bold;
+}
 
-    .landing - page.landing - summary p {
-        font - size: 54 px;
+.landing-page .landing-summary p {
+  font-size: 54px;
 
-        font - size: -webkit - xxx - large;
+  font-size: -webkit-xxx-large;
 
-        color: #efeaea;
-    }
-@media screen and(max - width: 736 px) {
-        .header {
-            display: block;
+  color: #efeaea;
+}
 
-            background - color: #333333;
+@media screen and (max-width: 736px) {
+  .overlay {
+    height: 100%;
+  }
+  .header {
+    display: block;
+    height: 50px;
+    background-color: #333333;
 
     position: relative;
   }
@@ -169,14 +172,16 @@ body {
   .header .links li {
     font-size: 12px;
 
-    display: block;
+    display: inline-block;
 
-    padding: 0px;
-
-    margin: 0px;
+    margin: 0px 30px 0px 0px;
 
     text-align: center;
   }
+
+  /* .overlay .header {
+    display: none;
+  } */
 
   .landing-page .landing-summary {
     z-index: 2;
@@ -185,47 +190,48 @@ body {
   .landing-page .landing-summary h1 {
     font-size: 45px;
 
-    color: # fff;
+    color: #fff;
 
-            font - weight: bold;
-        }
+    font-weight: bold;
+  }
 
-        .landing - page.landing - summary p {
-            font - size: 20 px;
+  .landing-page .landing-summary p {
+    font-size: 20px;
 
-            color: #efeaea;
-        }
-    }
-    /* Start Timeline */
+    color: #efeaea;
+  }
+}
 
-    .timeline {
-        background - color: #eee;
-        position: relative;
-    }
+/* Start Timeline */
 
-    .timeline h1 {
-        font - size: 40 px;
-        text - align: center;
-        margin - top: 45 px;
-        margin - bottom: 20 px;
-    }
-    .timeline.container {
-        margin - top: 40 px;
-    }
-    .timeline.timeline - content {
-        position: relative;
+.timeline {
+  background-color: #eee;
+  position: relative;
+}
 
-        overflow: hidden;
-    }
+.timeline h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+.timeline .container {
+  margin-top: 40px;
+}
+.timeline .timeline-content {
+  position: relative;
 
-    .timeline.timeline - content: before {
-        content: "";
+  overflow: hidden;
+}
 
-        width: 2 px;
+.timeline .timeline-content:before {
+  content: "";
 
-        height: 100 % ;
+  width: 2px;
 
-        background - color: #544;
+  height: 100%;
+
+  background-color: #544;
 
   position: absolute;
 
@@ -241,47 +247,47 @@ body {
 
   width: 50px;
 
-  background-color: # 00 f;
+  background-color: #00f;
 
-        position: relative;
+  position: relative;
 
-        z - index: 2;
+  z-index: 2;
 
-        border - radius: 4 px;
+  border-radius: 4px;
 
-        text - align: center;
+  text-align: center;
 
-        color: #fff;
+  color: #fff;
 
-        padding: 2 px 5 px;
+  padding: 2px 5px;
 
-        font - weight: bold;
-    }
+  font-weight: bold;
+}
 
-    .timeline.timeline - content.left,
-    .timeline.timeline - content.right {
-        width: calc(50 % -28 px);
+.timeline .timeline-content .left,
+.timeline .timeline-content .right {
+  width: calc(50% - 28px);
 
-        margin - bottom: 40 px;
+  margin-bottom: 40px;
 
-        position: relative;
-    }
+  position: relative;
+}
 
-    .timeline.timeline - content.left {
-        float: left;
-    }
+.timeline .timeline-content .left {
+  float: left;
+}
 
-    .timeline.timeline - content.left: before,
-    .timeline.timeline - content.right: before {
-        content: "";
+.timeline .timeline-content .left:before,
+.timeline .timeline-content .right:before {
+  content: "";
 
-        width: 14 px;
+  width: 14px;
 
-        height: 14 px;
+  height: 14px;
 
-        background - color: #fff;
+  background-color: #fff;
 
-        border: 3 px solid #444;
+  border: 3px solid #444;
 
   position: absolute;
 
@@ -305,17 +311,17 @@ body {
 .timeline .timeline-content .content {
   padding: 20px;
 
-  background-color: # fff;
-    }
+  background-color: #fff;
+}
 
-    .timeline.timeline - content.content h3 {
-        font - weight: bold;
-    }
+.timeline .timeline-content .content h3 {
+  font-weight: bold;
+}
 
-    .timeline.timeline - content.content p {
-        font - size: 16 px;
+.timeline .timeline-content .content p {
+  font-size: 16px;
 
-        color: #666666;
+  color: #666666;
 
   margin: 0px;
 }
