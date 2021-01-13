@@ -1,0 +1,122 @@
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #333;
+  color: #fff;
+  /*hamberget menu*/
+}
+
+.navbar .brand_title {
+  margin: .5rem;
+  font-size: 1.6rem;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar .brand_title a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .toggle-button {
+  position: absolute;
+  width: 30px;
+  height: 21px;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .toggle-button .bar {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.navbar .navbar_links {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar .navbar_links ul {
+  padding: 0px;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .navbar_links ul li {
+  list-style: none;
+}
+
+.navbar .navbar_links ul li a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar .navbar_links ul li:hover {
+  background-color: #555;
+  color: #000 !important;
+}
+
+@media (max-width: 768px) {
+  .navbar .toggle-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.navbar_links.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*Meqia Query*/
+@media (max-width: 768px) {
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .navbar_links {
+    width: 100%;
+    display: none;
+  }
+  .navbar_links ul {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar_links ul li {
+    text-align: center;
+  }
+  .navbar_links ul li a {
+    padding: .5rem 1rem;
+  }
+}
