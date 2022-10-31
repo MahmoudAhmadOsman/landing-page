@@ -16,4 +16,4 @@ Linkedin:  [https://www.linkedin.com/in/mahmoudaoman/](https://www.linkedin.com/
 
 ### My Website
  Please, visit my website
-[mahmoudosman.com](https://www.mahmoudosman.com) 
+[mahmoudosman.com](www.mahmoudosman.com) 
